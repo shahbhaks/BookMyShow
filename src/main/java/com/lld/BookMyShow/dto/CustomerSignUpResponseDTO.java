@@ -1,12 +1,15 @@
 package com.lld.BookMyShow.dto;
 
 
-import lombok.Data;
+import com.lld.BookMyShow.models.Ticket;
+import lombok.*;
 
 
 import java.util.List;
 
-@Data
+@Getter
+@Setter
+@NoArgsConstructor
 public class CustomerSignUpResponseDTO {
 
     private Long id;
@@ -14,7 +17,7 @@ public class CustomerSignUpResponseDTO {
     private String email;
     private int responseCode;
     private String responseMessage;
-   // private List<TicketResponseDTO> ticket;
+    private List<Ticket> ticket;
 
 
 }

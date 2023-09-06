@@ -17,5 +17,5 @@ public interface CustomerRepository extends JpaRepository<Customer, Long> {
     Optional<Customer> findByEmailAndName(String email, String name);
 
     @Override
-    Customer save(Customer customer);  //used for both create or update
+    Customer save(Customer customer);  //used for both create & update
 }

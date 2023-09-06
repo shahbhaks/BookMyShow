@@ -25,7 +25,8 @@ public class CustomerController {
             responseDTO.setId(customer.getId());
             responseDTO.setName(customer.getName());
             responseDTO.setEmail(customer.getEmail());
-           // responseDTO.setTicket(customer.getTicket());
+            responseDTO.setTicket(customer.getTickets());
+          //  responseDTO=this.convertUserToUserResponseDTO(customer);
             responseDTO.setResponseCode(200);
             responseDTO.setResponseMessage("SUCCESS");
 
